@@ -128,7 +128,7 @@
   // 4.  正式渲染
   pagebreak(weak: true, to: if twoside { "odd" })
 
-  block(width: 70pt, inset: meta-block-inset, grid(
+  block(width: 90pt, inset: meta-block-inset, grid(
     columns: (meta-info-key-width, 1fr),
     column-gutter: meta-info-column-gutter,
     row-gutter: meta-info-row-gutter,
