@@ -103,7 +103,7 @@
       info-key[#pin("title")毕业论文题目：], colspanx(5, info-value("", " ")),
       colspanx(6, info-value("", " ")),
       colspanx(2, info-value("major", info.major)), info-key[专业],
-      info-value("grade", info.grade), info-key(if type == "doctor" { [级硕士生姓名：] } else { [级博士生姓名：] } ), info-value("author", info.author),
+      info-value("grade", info.grade), info-key(if doctype == "master" { [级硕士生姓名：] } else { [级博士生姓名：] } ), info-value("author", info.author),
       colspanx(2, info-key[指导教师（姓名、职称）：]), colspanx(4, info-value("supervisor", info.supervisor.at(0) + " " + info.supervisor.at(1) + if info.supervisor-ii != () { h(1em) + info.supervisor-ii.at(0) + " " + info.supervisor-ii.at(1) })),
     )
 
