@@ -21,7 +21,7 @@
   heading-size: (字号.四号,),
   heading-weight: ("regular",),
   heading-above: (2 * 15.6pt - 0.7em, 2 * 15.6pt - 0.7em),
-  heading-below: (2 * 15.6pt - 0.7em, 1.5 * 15.6pt - 0.7em),
+  heading-below: (2 * 15.6pt - 0.7em, 1.8 * 15.6pt - 0.7em),
   heading-pagebreak: (true, false),
   heading-align: (center, auto),
   // 页眉
