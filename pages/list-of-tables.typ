@@ -53,8 +53,8 @@
   // 显示目录
   i-figured.outline(target-kind: table, title: none)
 
-  // 手动分页
-  if twoside {
-    pagebreak() + " "
-  }
+  // // 手动分页
+  // if twoside {
+  //   pagebreak() + " "
+  // }
 }

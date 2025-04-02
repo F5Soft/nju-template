@@ -54,7 +54,7 @@
   i-figured.outline(target-kind: image, title: none)
 
   // 手动分页
-  if twoside {
-    pagebreak() + " "
-  }
+  // if twoside {
+  //   pagebreak() + " "
+  // }
 }
