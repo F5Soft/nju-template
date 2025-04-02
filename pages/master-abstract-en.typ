@@ -117,7 +117,7 @@
 
     #align(center, text(font: fonts.黑体, size: 字号.小三, weight: abstract-title-weight, "ABSTRACT"))
 
-    #v(-5pt)
+    #v(3pt)
 
     
 

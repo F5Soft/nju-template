@@ -118,7 +118,7 @@
 
     #align(center, text(font: fonts.黑体, size: 字号.小三, weight: abstract-title-weight, "摘　　要"))
 
-    #v(-5pt)
+    #v(3pt)
 
     // #set text(font: fonts.楷体, size: 字号.小四)
 
