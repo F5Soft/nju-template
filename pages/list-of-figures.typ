@@ -10,7 +10,7 @@
   // 其他参数
   title: "插图目录",
   outlined: false,
-  title-vspace: 32pt,
+  title-vspace: 3em,
   title-text-args: auto,
   // 字体与字号
   font: auto,
