@@ -1,3 +1,5 @@
+#import "../utils/invisible-heading.typ": invisible-heading
+
 // Authors: csimide, OrangeX4
 // Tested only on GB-7714-2015-Numeric
 #let bilingual-bibliography(
@@ -141,6 +143,8 @@
       reptext
     }
   }
+
+  invisible-heading(level: 2, outlined: false, title)
 
   set text(lang: "zh")
   bibliography(
