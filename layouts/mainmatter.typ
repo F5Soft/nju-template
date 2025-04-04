@@ -127,6 +127,15 @@
     }
   }
 
+  let is-page-empty() = {
+    let page-num = here().page()
+    query(<empty-page-start>)
+      .zip(query(<empty-page-end>))
+      .any(((start, end)) => {
+        (start.location().page() < page-num and page-num < end.location().page())
+      })
+  }
+
   // 5.  处理页眉
   set page(..(if display-header {
     (
@@ -139,7 +148,7 @@
         // 5.1 获取当前页面的一级标题
         let cur-heading = current-heading(level: 1)
         // 5.2 如果当前页面没有一级标题，则渲染页眉
-        if not skip-on-first-level or cur-heading == none {
+        if not is-page-empty() and (not skip-on-first-level or cur-heading == none) {
           if header-render == auto {
             // 一级标题和二级标题
             let first-level-heading = if not twoside or calc.rem(loc.page(), 2) == 0 { heading-display(active-heading(level: 1)) } else { "" }
@@ -155,7 +164,13 @@
           }
           v(header-vspace)
         }
-      }
+      },
+      footer: context {
+        if is-page-empty() {
+          return
+        }
+        align(center, counter(page).display())
+      },
     )
   } else {
     (
@@ -164,7 +179,13 @@
         if reset-footnote {
           counter(footnote).update(0)
         }
-      }
+      },
+      footer: context {
+        if is-page-empty() {
+          return
+        }
+        align(center, counter(page).display())
+      },
     )
   }))
   context {

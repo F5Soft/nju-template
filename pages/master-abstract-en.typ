@@ -82,7 +82,7 @@
     #set par(leading: leading, spacing: spacing,justify: true)
 
     // 标记一个不可见的标题用于目录生成
-    // #invisible-heading(level: 1, outlined: outlined, outline-title)
+    #invisible-heading(level: 1, outlined: outlined, outline-title)
 
     #align(center)[
       #set text(font: fonts.楷体,size: 字号.小二, weight: "bold")
